@@ -1,0 +1,307 @@
+{
+  "intents": [
+    {
+      "intent": "Fungsi_K3",
+      "examples": [
+        {
+          "text": "apa fungsi dari k3?"
+        },
+        {
+          "text": "k3 berfungsi untuk?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Identifikasi_Bahaya_Listrik1",
+      "examples": [
+        {
+          "text": "apa itu identifikasi bahaya listrik?"
+        },
+        {
+          "text": "apa yang dimaksud dengan identifikasi bahaya listrik?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Identifikasi_Bahaya_Listrik2",
+      "examples": [
+        {
+          "text": "apa saja identifikasi bahaya listrik?"
+        },
+        {
+          "text": "sebutkan identifikasi bahaya listrik"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Identifikasi_Resiko",
+      "examples": [
+        {
+          "text": "Apa saja resiko umum yang ada di tempat kerja?"
+        },
+        {
+          "text": "Bagaimana cara mengidentifikasi bahaya dan risiko di lingkungan kerja?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Pencegahan_Kecelakaan",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "Pengenalan1_K3",
+      "examples": [
+        {
+          "text": "Apa itu K3?"
+        },
+        {
+          "text": "k3 adalah"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Peran_K3_di_Perusahaan",
+      "examples": [
+        {
+          "text": "apa saja peran dari k3?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Perlindungan_Fisik",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "Prosedur_Darurat",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "Prosedur_Keselamatan",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "Tujuan_K3",
+      "examples": [
+        {
+          "text": "apa tujuan dari k3?"
+        },
+        {
+          "text": "k3 bertujuan untuk?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Peran K3 di Perusahaan",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-Setiap tenaga kerja memiliki hak untuk mendapatkan perlindungan kesehatan dan keselamatan demi kesejahteraan hidup dan untuk meningkatkan produksi.\n-Setiap orang di tempat kerja harus memiliki jaminan keselamatan mereka.\n-Semua sumber produksi harus digunakan secara efisien dan aman.\n-Harus ada tindakan lanjutan oleh perusahaan sebagai upaya untuk mengurangi risiko kecelakaan dan penyakit akibat kerja."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Peran_K3_di_Perusahaan",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1688644327016",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Fungsi K3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "K3 teknik elektro bertujuan untuk menciptakan lingkungan kerja yang aman, melindungi karyawan dari risiko listrik, meminimalkan potensi kerusakan atau kecelakaan, dan menjaga kesehatan serta kesejahteraan mereka di tempat kerja."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Fungsi_K3",
+      "dialog_node": "node_1_1688649736846",
+      "previous_sibling": "node_7_1688649471490"
+    },
+    {
+      "type": "standard",
+      "title": "Identifikasi Bahaya Listrik1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Identifikasi bahaya listrik adalah langkah penting dalam Keselamatan dan Kesehatan Kerja (K3) untuk memastikan keselamatan karyawan yang bekerja di lingkungan yang melibatkan peralatan listrik."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Identifikasi_Bahaya_Listrik1",
+      "dialog_node": "node_3_1688648385827",
+      "previous_sibling": "Anything else"
+    },
+    {
+      "type": "standard",
+      "title": "Pencegahan Kecelakaan",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Identifikasi Bahaya dan Evaluasi Risiko\n2. Pelatihan Karyawan\n3. Pemeliharaan yang Tepat\n4. Pengamanan Instalasi Listrik\n5. Penerapan Prosedur Kerja yang Aman\n6. Penggunaan Alat Pelindung Diri (APD)\n7. Pengawasan dan Audit Keselamatan\n8. Promosi Budaya Keselamatan"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Pencegahan_Kecelakaan",
+      "dialog_node": "node_5_1688649872584",
+      "previous_sibling": "node_1_1688649736846"
+    },
+    {
+      "type": "standard",
+      "title": "Perlindungan Fisik1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Alat Pelindung Diri (APD)\n2. Penghalang Fisik\n3. Penandaan dan Labelisasi\n4. Pemisahan Fisik\n5. Tanda Peringatan\n6. Penanganan Kabel yang Benar\n7. Pengendalian Akses"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Perlindungan_Fisik",
+      "dialog_node": "node_5_1688650279855",
+      "previous_sibling": "node_5_1688649872584"
+    },
+    {
+      "type": "standard",
+      "title": "Prosedur Darurat",
+      "conditions": "#Prosedur_Darurat",
+      "dialog_node": "node_5_1688651222302",
+      "previous_sibling": "node_5_1688650279855"
+    },
+    {
+      "type": "standard",
+      "title": "Tujuan K3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "-Mencegah Cedera dan Kecelakaan\n-Melindungi Kesehatan Karyawan\n-Menjamin Keselamatan Instalasi Listrik\n-Memastikan Kepatuhan terhadap Peraturan dan Standar\n-Meningkatkan Kesadaran dan Pendidikan Karyawan\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Tujuan_K3",
+      "dialog_node": "node_7_1688645672072",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Identifikasi Bahaya Listrik2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Risiko Kejutan Listrik: Kontak langsung dengan arus listrik dapat menyebabkan kejutan listrik, yang dapat berakibat fatal. Bahaya ini terkait dengan sentuhan dengan kabel yang terhubung ke sumber listrik, peralatan listrik yang belum mati, atau kabel yang rusak atau terkelupas.\n\n2. Risiko Hubungan Pendek: Hubungan pendek terjadi ketika kabel listrik yang berbeda bersentuhan secara langsung atau melalui bahan konduktif lainnya. Ini dapat menyebabkan lonjakan arus yang berpotensi memicu kebakaran atau kerusakan pada peralatan.\n\n3. Risiko Kebakaran: Ketidaksempurnaan instalasi listrik, korsleting, arus pendek, atau peralatan yang tidak aman dapat menyebabkan kebakaran. \n\n4. Risiko Ledakan: Peralatan listrik yang bekerja dengan tingkat tegangan yang tinggi atau peralatan yang beroperasi di lingkungan berbahaya seperti lokasi yang mudah terbakar atau berpotensi meledak, dapat menyebabkan risiko ledakan jika tidak ditangani dengan benar.\n\n5. Risiko Radiasi Listrik: Beberapa peralatan listrik, seperti transformator atau peralatan berenergi tinggi, dapat menghasilkan radiasi elektromagnetik yang berpotensi berbahaya bagi karyawan jika tidak ada perlindungan yang memadai.\n\n6. Risiko Listrik Statis: Pada beberapa lingkungan kerja, risiko listrik statis dapat muncul, terutama di sekitar peralatan elektronik sensitif atau di area dengan kondisi udara kering.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Identifikasi_Bahaya_Listrik2",
+      "dialog_node": "node_7_1688649471490",
+      "previous_sibling": "node_3_1688648385827"
+    },
+    {
+      "type": "standard",
+      "title": "Pengenalan K3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "K3 adalah singkatan dari Keamanan, Kesehatan, dan Keselamatan Kerja. Pengertian K3 adalah bidang yang terkait dengan keselamatan, kesehatan, dan kesejahteraan manusia yang bekerja di lembaga atau lokasi proyek. \n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Pengenalan1_K3",
+      "dialog_node": "node_9_1688644327016",
+      "previous_sibling": "node_7_1688645672072"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "created for assistant 2db99e05-14db-468b-bcf0-3dfb8aa359c4",
+  "name": "Sobat K3 Elektro-dialog"
+}
